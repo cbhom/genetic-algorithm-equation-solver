@@ -43,8 +43,11 @@ getSolution()
 
 for i in range(1000):
   gen()
-  print(f"Generation: {i}\n{solutions[:10]}")
-  print()
+  print(f"Generation: {i}\n{solutions[:10]}\n")
   if solutions[0][0] > 1000:
-    print(f"\nBest Solutions : {solutions[0]}\nTotal Generations: {i}")
+    print("Math equation : x**4 + y*20 = 75\nMutation Rate: 2%\n")
+    print(f"\n--- Best Solution ---")
+    print(f"Fitness Score: {solutions[0][0]}")
+    print(f"x : {solutions[0][1]}\ny : {solutions[0][2]}")
+    print(f"Total Generations: {i}")
     break
