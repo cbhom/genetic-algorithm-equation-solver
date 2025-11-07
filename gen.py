@@ -16,8 +16,6 @@ def get_fitness(x,y):
   else:
     return 1/abs(ans)
 
-
-
 def getSolution():
   for i in range(1000):
     x = random.uniform(-1000,1000)
@@ -40,7 +38,6 @@ def gen():
 
 
 getSolution()
-
 for i in range(1000):
   gen()
   print(f"Generation: {i}\n{solutions[:10]}\n")
